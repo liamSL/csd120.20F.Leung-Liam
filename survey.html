@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--made in english baby!-->
+  <head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Liam.L" />
+    <meta name="description" content="CSD120 learning website" />
+    <title>CSD120-LiamLeung</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Desktop/CSD120/favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Desktop/CSD120/favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Desktop/CSD120/favicon_package_v0.16/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="Desktop/CSD120/favicon_package_v0.16/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="Desktop/CSD120/favicon_package_v0.16/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link
+      rel="shortcut icon"
+      href="Desktop/CSD120/favicon_package_v0.16/favicon.ico"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="Desktop/CSD120/favicon_package_v0.16/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="width-wrap">
+      <header id="top">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Survey</h1>
+        <form action="https://formspree.io/f/mrgoeovb" method="POST">
+          <p>
+            <label for="username"
+              >what is your name?:<abbr title="required" aria-label="required"
+                >*</abbr
+              ></label
+            >
+            <input
+              id="username"
+              type="text"
+              name="name_field"
+              placeholder="name"
+              required
+            />
+          </p>
+          <p>
+            <label for="email"
+              >what is your email?:<abbr title="required" aria-label="required"
+                >*</abbr
+              ></label
+            >
+            <input
+              id="email"
+              type="text"
+              name="email_field"
+              placeholder="email"
+              required
+            />
+          </p>
+          <p>
+            <label for="number">Which is the best whole number?:</label>
+            <input id="number" type="number" name="best_whole_number" min="0" />
+          </p>
+          <p>
+            <label for="date">Which date is best?:</label>
+            <input
+              id="date"
+              type="date"
+              name="best_date"
+              value="yyyy-mm-dd"
+              max="5050-11-23"
+              min="1800-06-03"
+            />
+          </p>
+          <p>
+            <label for="bear"
+              >Which bear is best?:<abbr title="required" aria-label="required"
+                >*</abbr
+              ></label
+            >
+            <input id="bear" type="text" name="best_bear" list="bears" />
+            <datalist id="bears">
+              <option>Black</option>
+              <option>Brown</option>
+              <option>Care</option>
+              <option>Panda</option>
+              <option>Polar</option>
+              <option>Teddy</option>
+            </datalist>
+          </p>
+          <fieldset>
+            <legend>Do you like radio buttons?</legend>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="answer"
+                  value="Yes"
+                  id="yes_ans"
+                /><label for="yes_ans">Yes</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="answer"
+                  value="no"
+                  id="no_ans"
+                /><label for="no_ans">No</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="answer"
+                  value="niether"
+                  id="neither_ans"
+                  checked
+                /><label for="neither_ans">None of your businuss</label>
+              </li>
+            </ul>
+          </fieldset>
+          <p>
+            <label for="question">What is the meaning of life?:</label>
+            <textarea
+              name="life_meaning"
+              id="question"
+              cols="50"
+              rows="5"
+              placeholder="Enter the correct answer here"
+            ></textarea>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </main>
+      <footer>
+        <hr />
+        <blockquote>
+          "A house divided against itself cannot stand."
+          <cite>— <span class="author">Abraham Lincoln</span></cite>
+        </blockquote>
+        <p>
+          © 2020
+          <a
+            id="mailingaddress"
+            href="mailto:liamleung@outlook.com?subject=Message%20from%20CSD120%20Website"
+            >Liam.L</a
+          >
+        </p>
+        <picture>
+          <img
+            src="images/sc-logo/sc-logo.png"
+            width="70"
+            alt="the sault college logo"
+            srcset="
+              images/sc-logo/sc-logo@1.5x.png 1.5x,
+              images/sc-logo/sc-logo@2x.png   2x,
+              images/sc-logo/sc-logo.svg
+            "
+          />
+        </picture>
+      </footer>
+      <a href="#top">◤</a>
+    </div>
+  </body>
+</html>
