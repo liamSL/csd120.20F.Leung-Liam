@@ -81,7 +81,7 @@
             >
             <input
               id="email"
-              type="text"
+              type="email"
               name="email_field"
               placeholder="email"
               required
@@ -89,15 +89,14 @@
           </p>
           <p>
             <label for="number">Which is the best whole number?:</label>
-            <input id="number" type="number" name="best_whole_number" min="0" />
+            <input id="number" type="number" name="best_whole_number" min="1" step="1" />
           </p>
           <p>
             <label for="date">Which date is best?:</label>
             <input
               id="date"
               type="date"
-              name="best_date"
-              value="yyyy-mm-dd"
+              name="best_day"
               max="5050-11-23"
               min="1800-06-03"
             />
@@ -108,7 +107,7 @@
                 >*</abbr
               ></label
             >
-            <input id="bear" type="text" name="best_bear" list="bears" />
+            <input id="bear" type="text" name="best_bear" list="bears" required />
             <datalist id="bears">
               <option>Black</option>
               <option>Brown</option>
@@ -125,7 +124,7 @@
                 <input
                   type="radio"
                   name="answer"
-                  value="Yes"
+                  value="yes"
                   id="yes_ans"
                 /><label for="yes_ans">Yes</label>
               </li>
@@ -141,7 +140,7 @@
                 <input
                   type="radio"
                   name="answer"
-                  value="niether"
+                  value="?"
                   id="neither_ans"
                   checked
                 /><label for="neither_ans">None of your businuss</label>
