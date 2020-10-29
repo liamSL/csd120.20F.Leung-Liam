@@ -11,6 +11,36 @@
     border-right: 1px solid;
     border-bottom: 1px solid;
     border-color: rgba(000,000,000,0.3);
+    background-color: #8285B0;
+}
+body
+{
+    color:#A7272A;
+    background-color:#A7272A;
+}
+nav a
+{
+    color:crimson;
+}
+nav a:hover
+{
+    background-color: lime;
+}
+a
+{
+    color:#A7272A;
+}
+h1
+{
+    color: #060608;
+}
+h2
+{
+    color: #060608;
+}
+h3
+{
+    color: #060608;
 }
 hr
 {
@@ -20,4 +50,8 @@ hr
     margin-top: 3em;
     margin-bottom: 2em;
     border-bottom: 3px dotted red;
+}
+dt::after
+{
+   content:":"; 
 }
