@@ -18,6 +18,19 @@ body
     color:#A7272A;
     background-color:#A7272A;
 }
+header
+{
+    border-top: 4px solid;
+    border-color: rgba(000,000,000,0.3);
+    margin-left: -2em;
+    margin-right: -2em;
+}
+header nav
+{
+    border-bottom: 1px dotted;
+    border-color: rgba(000,000,000,5);
+    
+}
 nav a
 {
     color:crimson;
