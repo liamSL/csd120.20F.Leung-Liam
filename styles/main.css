@@ -4,7 +4,8 @@
 }
 [class="width-wrap"] 
 {
-    max-width: 960px; margin: auto;
+    max-width: 960px; 
+    margin: auto;
     padding: 2em;
     margin-bottom: 3em;
     border-left: 1px solid;
@@ -29,19 +30,34 @@ header nav
 {
     border-bottom: 1px dotted;
     border-color: rgba(000,000,000,5);
-    
+    margin-left: 2em;
+    margin-right: 2em;
 }
 nav a
 {
-    color:crimson;
+    color: rgba(220,20,60);
+    display: inline-block;
+    margin-top: -0.25em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
 }
 nav a:hover
 {
-    background-color: lime;
+    border-top: 4px solid crimson;
+}
+nav li
+{
+    display: inline-block;
+    margin-right: 1em;
+}
+nav ul
+{
+    padding: 0;
+    margin: 0;
 }
 a
 {
-    color:#A7272A;
+    color:#a7272a;
 }
 h1
 {
@@ -67,4 +83,55 @@ hr
 dt::after
 {
    content:":"; 
+}
+td
+{
+    padding: 0.3em 1em;
+}
+th
+{
+    padding: 0.3em 1em;
+}
+thead
+{
+    background-color: rgba(000,000,000,0.2)
+}
+tfoot
+{
+    background-color: rgba(000,000,000,0.2)
+}
+tr
+{
+    background-color: rgba(000,000,000,0.05)
+}
+tbody tr:nth-child(even)
+{
+    background-color: rgba(000,000,000,0.15)
+}
+tbody th
+{
+    background-color: rgba(000,000,000,0.2)
+}
+label
+{
+    display: block;
+}
+fieldset label
+{
+    display: inline;
+}
+button[type = submit]
+{
+    border: 0;
+    padding: 1em 3em;
+    color: crimson;
+    background-color: gold;
+}
+input:invalid
+{
+    background-color: rgba(225,0,0,0.3);
+}
+input:valid
+{
+    background-color: rgba(0,225,0,0.3);
 }
