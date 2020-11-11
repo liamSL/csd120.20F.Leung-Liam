@@ -1,10 +1,14 @@
 * {
   box-sizing: border-box;
 }
-[class="width-wrap"] {
+*::selection {
+  background-color: red;
+}
+.width-wrap {
   max-width: 960px;
   margin: auto;
   padding: 2em;
+  padding-top: 0;
   margin-bottom: 3em;
   border-left: 1px solid;
   border-right: 1px solid;
@@ -16,38 +20,43 @@ body {
   color: #a7272a;
   background-color: #a7272a;
 }
+
+a {
+  color: #a7272a;
+}
+
 header {
   border-top: 4px solid;
-  border-color: rgba(000, 000, 000, 0.3);
+  border-color: rgba(000, 000, 000, 0.1);
   margin-left: -2em;
   margin-right: -2em;
 }
 header nav {
   border-bottom: 1px dotted;
-  border-color: rgba(000, 000, 000, 5);
+  border-color: rgba(000, 000, 000, 0.3);
   margin-left: 2em;
   margin-right: 2em;
 }
 nav a {
   color: rgba(220, 20, 60);
   display: inline-block;
-  margin-top: -0.25em;
+  margin-top: -4px;
+  margin-left: 1em;
+  margin-right: 1em;
   padding-top: 1em;
   padding-bottom: 0.5em;
+  border-top: 4px solid rgba(0,0,0,0);
 }
 nav a:hover {
   border-top: 4px solid crimson;
 }
 nav li {
-  display: inline-block;
+  display: inline;
   margin-right: 1em;
 }
 nav ul {
   padding: 0;
   margin: 0;
-}
-a {
-  color: #a7272a;
 }
 h1 {
   color: #060608;
@@ -64,6 +73,7 @@ hr {
   width: 50vw;
   margin-top: 3em;
   margin-bottom: 2em;
+  border: none;
   border-bottom: 3px dotted red;
 }
 dt::after {
@@ -75,16 +85,18 @@ td {
 th {
   padding: 0.3em 1em;
 }
-thead {
+thead th,
+thead td {
   background-color: rgba(000, 000, 000, 0.2);
 }
-tfoot {
+tfoot th,
+tfoot td {
   background-color: rgba(000, 000, 000, 0.2);
 }
-tr {
+tbody tr td {
   background-color: rgba(000, 000, 000, 0.05);
 }
-tbody tr:nth-child(even) {
+tbody tr:nth-child(even) td {
   background-color: rgba(000, 000, 000, 0.15);
 }
 tbody th {
