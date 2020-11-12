@@ -16,6 +16,23 @@
   border-color: rgba(000, 000, 000, 0.3);
   background-color: #8285b0;
 }
+.bio img
+{
+  max-width: 100%;
+  padding: 2%;
+  box-shadow: -5px 5px #060608;
+}
+.bio
+{
+  column-count: 3;
+  column-gap: 2em;
+}
+table
+{
+  margin-top: 1em;
+  column-span: all;
+  border-collapse: collapse;
+}
 h1, h2, h3 
 {
   font-family: 'Lora', serif;
@@ -64,6 +81,7 @@ nav a {
   border-top: 4px solid rgba(0,0,0,0);
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 nav a:hover {
   border-top: 4px solid crimson;
@@ -82,7 +100,12 @@ ol
   list-style-type: upper-roman;
 }
 h1 {
-  color: #060608;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(5, 0, 92, 0.953) 11%, rgba(147,0,20,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  
 }
 h2 {
   color: #060608;
@@ -147,4 +170,14 @@ fieldset ul
 {
   padding: 0;
   list-style-type: none;
+}
+footer
+{
+  font-size: 75%;
+  text-align: center;
+}
+a[href= "#top"]
+{
+  text-decoration: none;
+  text-shadow: -3px -3px #060608;
 }
