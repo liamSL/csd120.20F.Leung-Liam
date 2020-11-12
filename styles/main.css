@@ -35,9 +35,8 @@ a:hover
 {
   text-decoration: underline;
 }
-video[src= "MOO.mp4"]
+iframe[src= "MOO.mp4"]
 {
-  object-fit: cover;
   border-top-right-radius: 2em;
   border-bottom-left-radius: 2em;
 }
@@ -63,9 +62,12 @@ nav a {
   padding-top: 1em;
   padding-bottom: 0.5em;
   border-top: 4px solid rgba(0,0,0,0);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 nav a:hover {
   border-top: 4px solid crimson;
+  text-decoration: none;
 }
 nav li {
   display: inline;
@@ -141,7 +143,7 @@ input:invalid {
 input:valid {
   background-color: rgba(0, 225, 0, 0.3);
 }
-input[type="radio"] li
+fieldset ul
 {
   padding: 0;
   list-style-type: none;
