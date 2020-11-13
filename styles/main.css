@@ -122,6 +122,10 @@ hr {
   border: none;
   border-bottom: 3px dotted red;
 }
+table
+{
+  caption-side: bottom;
+}
 dt::after {
   content: ":";
 }
