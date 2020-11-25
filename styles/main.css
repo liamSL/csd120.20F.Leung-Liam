@@ -16,6 +16,10 @@
   border-color: rgba(000, 000, 000, 0.3);
   background-color: #8285b0;
 }
+img
+{
+  max-width: 100%;
+}
 .bio img {
   max-width: 100%;
   padding: 2%;
@@ -221,4 +225,25 @@ div.favourites>label+div
 div.gallery
 {
   display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+div.gallery img
+{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+div.gallery a:hover
+{
+  position: relative;
+}
+div.gallery a[class = row-span-2]
+{
+  grid-row: span 2;
+}
+div.gallery a[class = column-span-2]
+{
+  grid-column: span 2;
 }
