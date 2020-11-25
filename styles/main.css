@@ -189,7 +189,6 @@ div.favourites
 div.favourites label
 {
   order: -1;
-  padding: 0.5em;
 }
 div[class = favourites] div
 {
@@ -203,4 +202,16 @@ div.favourites input
 div.favourites input:checked + label + div
 {
   display: contents;
+}
+ label h3
+ {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(255, 180, 0) 11%,
+    rgba(147, 0, 20, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
