@@ -201,17 +201,20 @@ div.favourites input
 }
 div.favourites input:checked + label + div
 {
-  display: contents;
+  display:flex;
+  flex-wrap: nowrap;
 }
- label h3
- {
-  background: rgb(2, 0, 36);
-  background: radial-gradient(
-    circle,
-    rgba(255, 180, 0) 11%,
-    rgba(147, 0, 20, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+label h3
+{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 20px;
+  color: rgba(255, 165, 0);
+  background:  #a7272a;
+  border: 3px solid black;
+}
+div.favourites>label+div
+{
+  border: 10px double  #a7272a;
+  background-color: #202022;
 }
