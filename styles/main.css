@@ -184,14 +184,16 @@ a[href="#top"] {
 div.favourites
 {
   display: flex;
+  flex-wrap: wrap;
 }
-div.favourites label+div
+div.favourites label
 {
-  justify-content: flex-start;
+  order: -1;
 }
 div[class = favourites] div
 {
   display: none;
+  width: 100%;
 }
 div.favourites input
 {
