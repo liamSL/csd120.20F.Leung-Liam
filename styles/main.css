@@ -237,7 +237,8 @@ div.gallery img
 }
 div.gallery a:hover
 {
-  position: relative;
+ transform: scale(1.1);
+ position: relative;
 }
 div.gallery a[class = row-span-2]
 {
