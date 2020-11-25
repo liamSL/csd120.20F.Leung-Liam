@@ -189,6 +189,7 @@ div.favourites
 div.favourites label
 {
   order: -1;
+  padding: 0.5em;
 }
 div[class = favourites] div
 {
