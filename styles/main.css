@@ -181,3 +181,23 @@ a[href="#top"] {
   text-decoration: none;
   text-shadow: -3px -3px #060608;
 }
+div.favourites
+{
+  display: flex;
+}
+div.favourites label+div
+{
+  justify-content: flex-start;
+}
+div[class = favourites] div
+{
+  display: none;
+}
+div.favourites input
+{
+  display: none;
+}
+div.favourites input:checked + label + div
+{
+  display: contents;
+}
