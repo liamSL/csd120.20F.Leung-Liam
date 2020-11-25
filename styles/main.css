@@ -218,3 +218,7 @@ div.favourites>label+div
   border: 10px double  #a7272a;
   background-color: #202022;
 }
+div.gallery
+{
+  display: grid;
+}
