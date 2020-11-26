@@ -209,10 +209,6 @@ div.favourites label
   order: -1;
   padding: 0.5em;
 }
-div.favourites label:hover
-{
-  transform: scale(1.1);
-}
 div[class = favourites] div
 {
   display: none;
@@ -236,6 +232,10 @@ label h3
   color: rgba(255, 165, 0);
   background:  #a7272a;
   border: 3px solid black;
+}
+label h3:hover
+{
+  transform: scale(1.1);
 }
 div.favourites>label+div
 {
