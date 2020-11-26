@@ -24,6 +24,7 @@ img
   max-width: 100%;
   padding: 2%;
   box-shadow: -5px 5px #060608;
+  background-color: white;
 }
 .bio {
   column-count: 3;
@@ -206,11 +207,17 @@ div.favourites
 div.favourites label
 {
   order: -1;
+  padding: 0.5em;
+}
+div.favourites label:hover
+{
+  transform: scale(1.1);
 }
 div[class = favourites] div
 {
   display: none;
   width: 100%;
+  justify-content: center;
 }
 div.favourites input
 {
@@ -266,6 +273,7 @@ img.paperclip
   box-shadow: none;
   width: 20%;
   position: absolute;
-  top: -13px;
-  right: -8px;
+  top: -15px;
+  right: -11px;
+  background-color: transparent;
 }
