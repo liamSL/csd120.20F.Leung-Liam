@@ -221,7 +221,7 @@ div.favourites input:checked + label + div
   display:flex;
   flex-wrap: nowrap;
 }
-label h3
+div.favourites label h3
 {
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
@@ -229,6 +229,10 @@ label h3
   color: rgba(255, 165, 0);
   background:  #a7272a;
   border: 3px solid black;
+  opacity: 50%;
+}
+div.favourites input:checked + label h3 {
+  opacity: 100%;
 }
 div.favourites>label+div
 {
