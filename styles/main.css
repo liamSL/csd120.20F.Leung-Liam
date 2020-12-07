@@ -227,7 +227,7 @@ div.favourites input:checked + label + div
   display: flex;
   flex-wrap: nowrap;
 }
-label h3
+div.favourites label h3
 {
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
