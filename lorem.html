@@ -58,6 +58,14 @@
         margin-top: 1em;
         clear: both;
       }
+      @media screen and (max-width: 525px)
+      {
+      img.lpic
+        {
+          float: none !important;
+          display: block;
+        }
+      }
     </style>
   </head>
   <body>
@@ -74,7 +82,7 @@
       <main>
         <h1>Lorem Ipsum</h1>
         <p>
-          <img id = "i1" src = https://loremflickr.com/320/240/cat alt = "cat">Lorem
+          <img class = lpic id = "i1" src = https://loremflickr.com/320/240/cat alt = "cat">Lorem
           ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus
           vestibulum elit vitae semper. Ut ut vulputate turpis. Fusce feugiat
           metus nisi, tincidunt bibendum neque vulputate sit amet. Curabitur
@@ -99,7 +107,7 @@
           ultrices aliquet enim. Etiam eu fermentum urna.
         </p>
         <p>
-          <img id = "i2" src= https://loremflickr.com/320/240/dog alt = "dog">In
+          <img class = lpic id = "i2" src= https://loremflickr.com/320/240/dog alt = "dog">In
           sagittis mauris non neque vehicula, nec scelerisque eros congue. Nam
           lacus urna, aliquam sed neque vel, gravida placerat orci. Proin
           finibus ligula eu viverra varius. Curabitur laoreet augue in mi luctus

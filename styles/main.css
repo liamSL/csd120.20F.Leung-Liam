@@ -27,12 +27,12 @@ img
   background-color: white;
 }
 .bio {
-  column-count: 3;
+  column-width: 13em;
   column-gap: 2em;
 }
 div.bio a
 {
-  display: block;
+  display: inline-block;
   position: relative;
 }
 table {
@@ -75,6 +75,14 @@ header nav {
   border-color: rgba(000, 000, 000, 0.3);
   margin-left: 2em;
   margin-right: 2em;
+}
+nav input
+{
+  display: none;
+}
+nav label
+{
+  display: none;
 }
 nav a {
   color: rgba(220, 20, 60);
@@ -194,6 +202,7 @@ a[href="#top"] {
   display: inline-block;
   position: sticky;
   bottom: 10px;
+  transition: transform 200ms;
 }
 a[href="#top"]:hover
 {
@@ -221,7 +230,7 @@ div.favourites input
 }
 div.favourites input:checked + label + div
 {
-  display:flex;
+  display: flex;
   flex-wrap: nowrap;
 }
 label h3
@@ -232,10 +241,18 @@ label h3
   color: rgba(255, 165, 0);
   background:  #a7272a;
   border: 3px solid black;
+  margin: 0;
 }
 label h3:hover
 {
   transform: scale(1.1);
+}
+input:checked + label h3
+{
+  color: crimson;
+  background: #202022;
+  border: 5px double #a7272a;
+  padding: 3px;
 }
 div.favourites>label+div
 {
@@ -245,7 +262,7 @@ div.favourites>label+div
 div.gallery
 {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   grid-gap: 10px;
 }
 div.gallery img
@@ -255,9 +272,13 @@ div.gallery img
   height: 100%;
   object-fit: cover;
 }
+div.gallery a
+{
+  transition: transform 200ms;
+}
 div.gallery a:hover
 {
- transform: scale(1.1);
+ transform:scale(1.1);
  position: relative;
 }
 div.gallery a.row-span-2
@@ -276,4 +297,106 @@ img.paperclip
   top: -15px;
   right: -11px;
   background-color: transparent;
+}
+@media screen and (max-width: 450px)
+{
+  div.gallery a.column-span-2
+  {
+    grid-column: span 1;
+  }
+}
+@media screen and (max-width: 500px)
+{
+  div.bio thead, tfoot, th
+  {
+    display: none;
+  }
+  div.bio tr td:first-of-type
+  {
+    padding-top: 0.3em;
+    font: bold;
+  }
+  div.bio tr td:last-of-type
+  {
+    padding-bottom: 0.3em;
+    font: italic;
+    font-size: 0.8em;
+  }
+  div.bio tr td:last-of-type::after
+  {
+    content: "hrs/wk"
+  }
+  div.bio td
+  {
+    display: block;
+    padding: 0 1rem;
+  }
+  div.bio table
+  {
+    caption-side: top;
+  }
+}
+@media screen and (max-width: 800px)
+{
+  div.favourites
+  {
+    flex-direction: column;
+  }
+  div.favourites label
+  {
+    order: 0;
+  }
+  label h3
+  {
+    text-align: center;
+    
+  }
+}
+@media screen and (max-width: 380px)
+{
+  header ul
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a
+  {
+    padding-top: 0.5em;
+  }
+  nav a:hover
+  {
+    margin: 0;
+    border: none;
+    text-decoration: underline;
+  }
+}
+@media screen and (max-width: 380px)
+{
+  nav label.sandwich-icon
+  {
+    display: block;
+    width: 40px;
+    height: 25px;
+    border-top: 5px solid #a7272a;
+    margin: 1em auto;
+    position: relative;
+  }
+  nav label.sandwich-icon::before
+  {
+    content: "";
+    display: block;
+    width: 40px;
+    border-top: 5px solid #a7272a;
+    position: absolute;
+    margin-top: 5px;
+  }
+  nav label.sandwich-icon::after
+  {
+    content: "";
+    display: block;
+    width: 40px;
+    border-top: 5px solid #a7272a;
+    position: absolute;
+    margin-top: 15px;
+  }
 }
