@@ -387,7 +387,8 @@ img.paperclip
     border-top: 5px solid #a7272a;
     position: absolute;
     margin-top: 5px;
-    transition: opacity 100ms;
+    opacity: 1;
+    transition: opacity 100ms, transform 100ms;
   }
   nav label.sandwich-icon::after
   {
@@ -397,8 +398,8 @@ img.paperclip
     border-top: 5px solid #a7272a;
     position: absolute;
     margin-top: 15px;
-    height: 0;
-    transition: transform 100ms;
+    transition-property: transform;
+    transition-duration: 100ms;
   }
   nav label.sandwich-icon:hover
   {
@@ -408,16 +409,17 @@ img.paperclip
   {
     height: 7em;
   }
-  input:checked + nav label.sandwich-icon::after
+  input:checked + label.sandwich-icon::after
   {
-    height: ;
+    transform: translateY(-20px) rotate(-90deg);
   }
-  input:checked + nav label.sandwich-icon::before
+  input:checked + label.sandwich-icon::before
   {
     opacity: 0;
+    transform: translateY(-10px);
   }
   input:checked + label.sandwich-icon
   {
-    height: ;
+    transform: translate(-9px, 10px) rotate(45deg);
   }
 }
