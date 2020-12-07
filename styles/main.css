@@ -97,9 +97,7 @@ nav a:hover {
   border-top: 4px solid crimson;
   text-decoration: none;
 }
-nav li {
-  margin-right: 1em;
-}
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -356,6 +354,7 @@ img.paperclip
     align-items: center;
     height: 0;
     overflow: hidden;
+    transition: height 200ms;
   }
   nav a
   {
@@ -378,6 +377,7 @@ img.paperclip
     border-top: 5px solid #a7272a;
     margin: 1em auto;
     position: relative;
+    transition: height 200ms, transform 100ms;
   }
   nav label.sandwich-icon::before
   {
@@ -387,6 +387,7 @@ img.paperclip
     border-top: 5px solid #a7272a;
     position: absolute;
     margin-top: 5px;
+    transition: opacity 100ms;
   }
   nav label.sandwich-icon::after
   {
@@ -396,9 +397,27 @@ img.paperclip
     border-top: 5px solid #a7272a;
     position: absolute;
     margin-top: 15px;
+    height: 0;
+    transition: transform 100ms;
   }
-  label.sandwich-icon+input:checked+nav ul
+  nav label.sandwich-icon:hover
   {
-    overflow: visible;
+    cursor: pointer;
+  }
+  input:checked+label.sandwich-icon+ul
+  {
+    height: 7em;
+  }
+  input:checked + nav label.sandwich-icon::after
+  {
+    height: ;
+  }
+  input:checked + nav label.sandwich-icon::before
+  {
+    opacity: 0;
+  }
+  input:checked + label.sandwich-icon
+  {
+    height: ;
   }
 }
