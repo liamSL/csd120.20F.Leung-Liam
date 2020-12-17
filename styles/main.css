@@ -308,12 +308,12 @@ img.paperclip
   div.bio tr td:first-of-type
   {
     padding-top: 0.3em;
-    font: bold;
+    font-weight: bold;
   }
   div.bio tr td:last-of-type
   {
     padding-bottom: 0.3em;
-    font: italic;
+    font-style: italic;
     font-size: 0.8em;
   }
   div.bio tr td:last-of-type::after
